@@ -1,0 +1,6 @@
+*.log
+*.vcd
+cla_sim
+ngspice_con.exe
+ngspice.exe
+.DS_Store
