@@ -1,0 +1,33 @@
+* NGSPICE file created from xor.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit xor
+
+M1000 VDD A Anot w_n25_n4# pfet w=0.72u l=0.18u
++  ad=1.296p pd=9.36u as=0.324p ps=2.34u
+M1001 GND Anot a_24_n44# Gnd nfet w=0.36u l=0.18u
++  ad=0.648p pd=6.48u as=0.2592p ps=2.16u
+M1002 XOR Bnot a_4_2# w_n25_n4# pfet w=0.72u l=0.18u
++  ad=0.5184p pd=2.88u as=0.5184p ps=2.88u
+M1003 a_4_n44# A GND Gnd nfet w=0.36u l=0.18u
++  ad=0.2592p pd=2.16u as=0p ps=0u
+M1004 a_24_n44# Bnot XOR Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0.2592p ps=2.16u
+M1005 a_24_2# B XOR w_n25_n4# pfet w=0.72u l=0.18u
++  ad=0.5184p pd=2.88u as=0p ps=0u
+M1006 Bnot B GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0p ps=0u
+M1007 GND A Anot Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0.162p ps=1.62u
+M1008 a_4_2# A VDD w_n25_n4# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1009 VDD Anot a_24_2# w_n25_n4# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1010 XOR B a_4_n44# Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1011 Bnot B VDD w_n25_n4# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0p ps=0u
+.end
+

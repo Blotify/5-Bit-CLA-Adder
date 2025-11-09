@@ -1,0 +1,21 @@
+* NGSPICE file created from and2.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit and2
+
+M1000 a_13_5# B a_13_n25# Gnd nfet w=0.36u l=0.18u
++  ad=0.1944p pd=1.8u as=0.2592p ps=2.16u
+M1001 OUT a_13_5# VDD w_43_n1# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=1.0368p ps=7.2u
+M1002 a_13_n25# A GND Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0.324p ps=3.24u
+M1003 OUT a_13_5# GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0p ps=0u
+M1004 a_13_5# A VDD w_0_n1# pfet w=0.72u l=0.18u
++  ad=0.5184p pd=2.88u as=0p ps=0u
+M1005 VDD B a_13_5# w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+.end
+
