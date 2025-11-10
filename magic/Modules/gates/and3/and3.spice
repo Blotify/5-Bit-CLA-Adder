@@ -1,0 +1,25 @@
+* NGSPICE file created from and3.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit and3
+
+M1000 3NAND C VDD w_0_n1# pfet w=0.72u l=0.18u
++  ad=0.9072p pd=5.4u as=1.1664p ps=7.56u
+M1001 a_23_n28# B a_13_n28# Gnd nfet w=0.36u l=0.18u
++  ad=0.2592p pd=2.16u as=0.2592p ps=2.16u
+M1002 OUT 3NAND GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0.324p ps=3.24u
+M1003 OUT 3NAND VDD w_53_n1# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0p ps=0u
+M1004 a_13_n28# A GND Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1005 3NAND A VDD w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1006 VDD B 3NAND w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1007 3NAND C a_23_n28# Gnd nfet w=0.36u l=0.18u
++  ad=0.1944p pd=1.8u as=0p ps=0u
+.end
+

@@ -1,0 +1,33 @@
+* NGSPICE file created from and5.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit and5
+
+M1000 5NAND C VDD w_0_n1# pfet w=0.72u l=0.18u
++  ad=1.4256p pd=8.28u as=1.6848p ps=10.44u
+M1001 VDD D 5NAND w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1002 a_23_n43# B a_13_n43# Gnd nfet w=0.36u l=0.18u
++  ad=0.2592p pd=2.16u as=0.2592p ps=2.16u
+M1003 5NAND E a_43_n43# Gnd nfet w=0.36u l=0.18u
++  ad=0.1944p pd=1.8u as=0.2592p ps=2.16u
+M1004 5NAND E VDD w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1005 a_13_n43# A GND Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0.324p ps=3.24u
+M1006 a_43_n43# D a_33_n43# Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0.2592p ps=2.16u
+M1007 OUT 5NAND GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0p ps=0u
+M1008 5NAND A VDD w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1009 OUT 5NAND VDD w_73_n1# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0p ps=0u
+M1010 VDD B 5NAND w_0_n1# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1011 a_33_n43# C a_23_n43# Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+.end
+
