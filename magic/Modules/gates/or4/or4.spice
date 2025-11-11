@@ -1,0 +1,29 @@
+* NGSPICE file created from or4.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit or4
+
+M1000 4NOR C GND Gnd nfet w=0.36u l=0.18u
++  ad=0.5184p pd=4.32u as=0.7452p ps=7.02u
+M1001 a_0_13# A VDD w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.5184p pd=2.88u as=0.648p ps=4.68u
+M1002 a_19_13# C a_10_13# w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.5184p pd=2.88u as=0.4536p ps=2.7u
+M1003 OUT 4NOR VDD w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0p ps=0u
+M1004 OUT 4NOR GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0p ps=0u
+M1005 GND B 4NOR Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1006 GND D 4NOR Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1007 4NOR A GND Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1008 a_10_13# B a_0_13# w_n13_7# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1009 4NOR D a_19_13# w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.3888p pd=2.52u as=0p ps=0u
+.end
+

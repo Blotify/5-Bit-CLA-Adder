@@ -1,0 +1,21 @@
+* NGSPICE file created from or2.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit or2
+
+M1000 NOR A GND Gnd nfet w=0.36u l=0.18u
++  ad=0.2592p pd=2.16u as=0.486p ps=4.86u
+M1001 OUT NOR VDD w_n13_0# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0.648p ps=4.68u
+M1002 NOR B a_0_6# w_n13_0# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0.5184p ps=2.88u
+M1003 OUT NOR GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0p ps=0u
+M1004 a_0_6# A VDD w_n13_0# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1005 GND B NOR Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+.end
+

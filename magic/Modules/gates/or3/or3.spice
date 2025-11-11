@@ -1,0 +1,25 @@
+* NGSPICE file created from or3.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit or3
+
+M1000 OUT 3NOR GND Gnd nfet w=0.36u l=0.18u
++  ad=0.162p pd=1.62u as=0.5508p ps=5.22u
+M1001 a_0_13# A VDD w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.5184p pd=2.88u as=0.648p ps=4.68u
+M1002 3NOR A GND Gnd nfet w=0.36u l=0.18u
++  ad=0.4536p pd=3.96u as=0p ps=0u
+M1003 3NOR C a_10_13# w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.3888p pd=2.52u as=0.4536p ps=2.7u
+M1004 3NOR C GND Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1005 OUT 3NOR VDD w_n13_7# pfet w=0.72u l=0.18u
++  ad=0.324p pd=2.34u as=0p ps=0u
+M1006 GND B 3NOR Gnd nfet w=0.36u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1007 a_10_13# B a_0_13# w_n13_7# pfet w=0.72u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+.end
+
