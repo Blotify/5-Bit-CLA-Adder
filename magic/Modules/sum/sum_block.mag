@@ -1,0 +1,105 @@
+magic
+tech scmos
+timestamp 1764766647
+<< metal1 >>
+rect -7 43 9 47
+rect -7 35 9 39
+rect -6 -53 10 -49
+rect -6 -61 10 -57
+rect -7 -150 9 -146
+rect -7 -158 9 -154
+rect -6 -251 10 -247
+rect -6 -259 10 -255
+rect -6 -349 10 -345
+rect -6 -357 10 -353
+<< metal2 >>
+rect 12 100 64 105
+rect 70 100 102 105
+rect 124 51 136 55
+rect 124 -45 135 -41
+rect 124 -142 135 -138
+rect 124 -243 135 -239
+rect 124 -341 135 -337
+rect 17 -404 42 -398
+rect 47 -404 96 -398
+<< m3contact >>
+rect 64 100 70 105
+rect 42 -404 47 -398
+<< m123contact >>
+rect 65 85 70 92
+rect 42 1 47 6
+rect 65 -11 70 -4
+rect 41 -94 47 -89
+rect 64 -108 69 -101
+rect 41 -191 47 -186
+rect 64 -209 69 -202
+rect 41 -292 47 -287
+rect 64 -307 69 -300
+rect 41 -391 47 -386
+<< metal3 >>
+rect 65 92 69 100
+rect 42 -89 46 1
+rect 65 -4 69 85
+rect 42 -186 46 -94
+rect 65 -101 69 -11
+rect 42 -287 46 -191
+rect 65 -202 69 -108
+rect 42 -386 46 -292
+rect 65 -300 69 -209
+rect 42 -398 46 -391
+use sum  sum_4
+timestamp 1764745195
+transform 1 0 4 0 1 -390
+box -4 -2 124 90
+use sum  sum_3
+timestamp 1764745195
+transform 1 0 4 0 1 -292
+box -4 -2 124 90
+use sum  sum_2
+timestamp 1764745195
+transform 1 0 4 0 1 -191
+box -4 -2 124 90
+use sum  sum_1
+timestamp 1764745195
+transform 1 0 4 0 1 -94
+box -4 -2 124 90
+use sum  sum_0
+timestamp 1764745195
+transform 1 0 4 0 1 2
+box -4 -2 124 90
+<< labels >>
+rlabel metal2 67 -401 67 -401 1 gnd
+port 2 n default bidirectional
+rlabel metal2 91 103 91 103 5 vdd
+port 1 s default bidirectional
+rlabel metal2 130 52 130 52 1 s1
+port 3 n default output
+rlabel metal2 131 -43 131 -43 7 s2
+port 4 w default output
+rlabel metal2 128 -141 128 -141 1 s3
+port 5 n default output
+rlabel metal2 127 -242 127 -242 1 s4
+port 6 n default output
+rlabel metal2 131 -339 131 -339 7 s5
+port 7 w default output
+rlabel metal1 -4 45 -4 45 3 c1
+port 8 e default input
+rlabel metal1 -2 36 -2 36 3 p1
+port 9 e default input
+rlabel metal1 0 -51 0 -51 1 c2
+port 10 n default input
+rlabel metal1 2 -58 2 -58 1 p2
+port 11 n default input
+rlabel metal1 -1 -148 -1 -148 1 c3
+port 12 n default input
+rlabel metal1 -3 -156 -3 -156 3 p3
+port 13 e default input
+rlabel metal1 0 -249 0 -249 1 c4
+port 14 n default input
+rlabel metal1 -1 -258 -1 -258 1 p4
+port 15 n default input
+rlabel metal1 1 -348 1 -348 1 c5
+port 16 n default input
+rlabel metal1 0 -355 0 -355 1 p5
+port 17 n default input
+<< end >>

@@ -1,0 +1,142 @@
+timestamp 1764766647
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use sum sum_0 1 0 4 0 1 2
+use sum sum_1 1 0 4 0 1 -94
+use sum sum_2 1 0 4 0 1 -191
+use sum sum_3 1 0 4 0 1 -292
+use sum sum_4 1 0 4 0 1 -390
+port "s5" 7 131 -339 131 -339 m2
+port "s4" 6 127 -242 127 -242 m2
+port "s3" 5 128 -141 128 -141 m2
+port "s2" 4 131 -43 131 -43 m2
+port "s1" 3 130 52 130 52 m2
+port "p5" 17 0 -355 0 -355 m1
+port "c5" 16 1 -348 1 -348 m1
+port "p4" 15 -1 -258 -1 -258 m1
+port "c4" 14 0 -249 0 -249 m1
+port "p3" 13 -3 -156 -3 -156 m1
+port "c3" 12 -1 -148 -1 -148 m1
+port "p2" 11 2 -58 2 -58 m1
+port "c2" 10 0 -51 0 -51 m1
+port "gnd" 2 67 -401 67 -401 m2
+port "p1" 9 -2 36 -2 36 m1
+port "c1" 8 -4 45 -4 45 m1
+port "vdd" 1 91 103 91 103 m2
+node "s5" 0 163.372 131 -339 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0
+node "s4" 0 163.372 127 -242 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0
+node "s3" 0 163.372 128 -141 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0
+node "s2" 0 163.372 131 -43 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0 0 0
+node "s1" 0 174.427 130 52 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 32 0 0 0 0 0 0 0 0
+node "p5" 0 60.2976 0 -355 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "c5" 0 60.2976 1 -348 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "p4" 0 60.2976 -1 -258 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "c4" 0 60.2976 0 -249 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "p3" 0 60.2976 -3 -156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "c3" 0 60.2976 -1 -148 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "p2" 0 60.2976 2 -58 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "c2" 0 60.2976 0 -51 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "gnd" 12 2030.88 67 -401 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145 108 619 278 1691 848 0 0 0 0 0 0
+node "p1" 0 60.2976 -2 36 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "c1" 0 60.2976 -4 45 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0 0 0 0 0 0 0
+node "vdd" 13 2212.78 91 103 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 175 120 625 310 1693 846 0 0 0 0 0 0
+cap "c5" "p5" 164.952
+cap "p1" "c1" 164.952
+cap "p2" "c2" 164.952
+cap "c3" "p3" 164.952
+cap "p4" "c4" 164.952
+subcap "gnd" -654.039
+cap "sum_4/xor_0/Bnot" "sum_4/gnd" 54.1184
+cap "sum_4/a" "sum_4/b" -103.095
+cap "sum_4/xor_0/a_4_2#" "sum_4/gnd" 7.056
+cap "sum_4/vdd" "sum_4/gnd" 46.7208
+cap "sum_4/xor_0/a_4_n44#" "sum_4/gnd" 3.528
+cap "sum_4/a" "sum_4/gnd" 87.268
+cap "sum_4/xor_0/w_n25_n4#" "sum_4/gnd" 8.952
+cap "sum_4/b" "sum_4/gnd" 3.352
+cap "sum_3/vdd" "sum_3/xor_0/B" 3.352
+cap "sum_3/gnd" "sum_3/b" 3.352
+cap "sum_3/b" "sum_3/a" -103.095
+cap "sum_3/gnd" "sum_3/a" 161.432
+cap "sum_3/b" "sum_3/vdd" 3.352
+cap "sum_3/gnd" "sum_3/vdd" 140.162
+cap "sum_3/a" "sum_3/vdd" 87.268
+cap "sum_3/xor_0/a_4_n44#" "sum_3/gnd" 3.528
+cap "sum_3/xor_0/Anot" "sum_3/vdd" 23.664
+cap "sum_3/gnd" "sum_3/xor_0/w_n25_n4#" 8.952
+cap "sum_3/xor_0/w_n25_n4#" "sum_3/vdd" 6.873
+cap "sum_3/gnd" "sum_3/xor_0/a_4_2#" 7.056
+cap "sum_3/gnd" "sum_3/xor_0/Bnot" 54.1184
+cap "sum_3/vdd" "sum_3/xor_0/XOR" 74.0448
+cap "sum_3/xor_0/a_24_2#" "sum_3/vdd" 5.208
+cap "sum_3/xor_0/a_24_n44#" "sum_3/vdd" 2.604
+cap "sum_2/vdd" "sum_2/b" 3.352
+cap "sum_2/gnd" "sum_2/xor_0/a_4_2#" 7.056
+cap "sum_2/a" "sum_2/vdd" 87.268
+cap "sum_2/a" "sum_2/b" -92.7855
+cap "sum_2/xor_0/XOR" "sum_2/vdd" 74.0448
+cap "sum_2/xor_0/Anot" "sum_2/vdd" 23.664
+cap "sum_2/gnd" "sum_2/xor_0/w_n25_n4#" 8.952
+cap "sum_2/gnd" "sum_2/xor_0/Bnot" 54.1184
+cap "sum_2/gnd" "sum_2/vdd" 107.309
+cap "sum_2/vdd" "sum_2/xor_0/a_24_n44#" 2.604
+cap "sum_2/gnd" "sum_2/b" 3.352
+cap "sum_2/gnd" "sum_2/a" 161.432
+cap "sum_2/xor_0/B" "sum_2/vdd" 3.352
+cap "sum_2/xor_0/a_24_2#" "sum_2/vdd" 5.208
+cap "sum_2/vdd" "sum_2/xor_0/w_n25_n4#" 6.873
+cap "sum_2/xor_0/a_4_n44#" "sum_2/gnd" 3.528
+cap "sum_1/xor_0/w_n25_n4#" "sum_0/gnd" 8.952
+cap "sum_1/vdd" "sum_1/xor_0/B" 3.352
+cap "sum_1/xor_0/Bnot" "sum_0/gnd" 54.1184
+cap "sum_1/xor_0/w_n25_n4#" "sum_1/vdd" 6.873
+cap "sum_0/gnd" "sum_1/xor_0/a_4_2#" 7.056
+cap "sum_0/gnd" "sum_1/xor_0/a_4_n44#" 3.528
+cap "sum_1/vdd" "sum_1/xor_0/a_24_n44#" 2.604
+cap "sum_1/vdd" "sum_1/xor_0/XOR" 74.0448
+cap "sum_1/vdd" "sum_1/xor_0/a_24_2#" 5.208
+cap "sum_1/vdd" "sum_1/xor_0/Anot" 23.664
+cap "sum_0/gnd" "sum_1/a" 161.432
+cap "sum_1/a" "sum_1/b" -103.095
+cap "sum_1/vdd" "sum_1/a" 87.268
+cap "sum_0/gnd" "sum_1/b" 3.352
+cap "sum_0/gnd" "sum_1/vdd" 162.784
+cap "sum_1/vdd" "sum_1/b" 3.352
+cap "sum_0/vdd" "sum_0/xor_0/XOR" 74.0448
+cap "sum_0/vdd" "sum_0/xor_0/w_n25_n4#" 6.873
+cap "sum_0/vdd" "sum_0/a" 87.268
+cap "sum_0/vdd" "sum_0/b" 3.352
+cap "sum_0/vdd" "sum_0/xor_0/Anot" 23.664
+cap "sum_0/b" "sum_0/a" -92.7855
+cap "sum_0/vdd" "sum_0/xor_0/a_24_n44#" 2.604
+cap "sum_0/vdd" "sum_0/xor_0/B" 3.352
+cap "sum_0/vdd" "sum_0/gnd" 79.6736
+cap "sum_0/vdd" "sum_0/xor_0/a_24_2#" 5.208
+merge "sum_0/vdd" "sum_1/vdd" -541.072 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -75 -125 36 0 0 0 0 0 0 0 0 0
+merge "sum_1/vdd" "sum_2/vdd"
+merge "sum_2/vdd" "sum_3/vdd"
+merge "sum_3/vdd" "sum_4/vdd"
+merge "sum_4/vdd" "vdd"
+merge "sum_2/sum" "s3" -85.9824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0
+merge "sum_0/sum" "s1" -85.9824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0
+merge "sum_1/gnd" "sum_0/gnd" -649.995 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -86 -98 -9 -9 0 0 0 0 0 0 0 0
+merge "sum_0/gnd" "sum_2/gnd"
+merge "sum_2/gnd" "sum_3/gnd"
+merge "sum_3/gnd" "sum_4/gnd"
+merge "sum_4/gnd" "gnd"
+merge "sum_1/sum" "s2" -85.9824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0
+merge "sum_0/a" "p1" -37.4244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -26 0 0 0 0 0 0 0 0 0 0
+merge "sum_3/sum" "s4" -85.9824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0
+merge "sum_3/a" "p4" -40.692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -28 0 0 0 0 0 0 0 0 0 0
+merge "sum_3/b" "c4" -40.692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -28 0 0 0 0 0 0 0 0 0 0
+merge "sum_1/a" "p2" -40.692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -28 0 0 0 0 0 0 0 0 0 0
+merge "sum_4/sum" "s5" -85.9824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0 0 0
+merge "sum_2/a" "p3" -37.4244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -26 0 0 0 0 0 0 0 0 0 0
+merge "sum_1/b" "c2" -40.692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -28 0 0 0 0 0 0 0 0 0 0
+merge "sum_4/a" "p5" -40.692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -28 0 0 0 0 0 0 0 0 0 0
+merge "sum_0/b" "c1" -37.4244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -26 0 0 0 0 0 0 0 0 0 0
+merge "sum_2/b" "c3" -37.4244 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 -26 0 0 0 0 0 0 0 0 0 0
+merge "sum_4/b" "c5" -40.692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -28 0 0 0 0 0 0 0 0 0 0

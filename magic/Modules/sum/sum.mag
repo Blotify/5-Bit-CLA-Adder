@@ -1,0 +1,26 @@
+magic
+tech scmos
+timestamp 1764745195
+<< metal1 >>
+rect 61 87 64 90
+rect -4 41 0 45
+rect -4 33 0 37
+rect 54 -2 57 0
+<< metal2 >>
+rect 120 49 124 53
+use xor  xor_0
+timestamp 1764744017
+transform 1 0 33 0 1 62
+box -33 -62 87 25
+<< labels >>
+rlabel metal1 61 87 64 90 5 vdd
+port 1 s default bidirectional
+rlabel metal1 56 -1 56 -1 1 gnd
+port 2 n default bidirectional
+rlabel metal1 -3 43 -3 43 3 b
+port 3 e default input
+rlabel metal1 -2 35 -2 35 3 a
+port 4 e default input
+rlabel metal2 122 51 122 51 7 sum
+port 5 w default output
+<< end >>
