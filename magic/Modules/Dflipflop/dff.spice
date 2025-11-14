@@ -1,0 +1,31 @@
+* NGSPICE file created from dff.ext - technology: scmos
+
+.global Vdd Gnd 
+
+
+* Top level circuit dff
+
+M1000 b clk n1 w_n21_n12# pfet w=1.8u l=0.18u
++  ad=1.134p pd=4.86u as=1.296p ps=5.04u
+M1001 c b n2 Gnd nfet w=0.9u l=0.18u
++  ad=0.729p pd=3.42u as=0.729p ps=3.42u
+M1002 b a gnd Gnd nfet w=0.45u l=0.18u
++  ad=0.6885p pd=3.96u as=1.296p ps=9.18u
+M1003 n1 a vdd w_n21_n12# pfet w=1.8u l=0.18u
++  ad=0p pd=0u as=2.106p ps=12.78u
+M1004 out n4 vdd w_96_n10# pfet w=0.9u l=0.18u
++  ad=0.405p pd=2.7u as=0p ps=0u
+M1005 c clk vdd w_n21_n12# pfet w=0.9u l=0.18u
++  ad=1.62p pd=5.4u as=0p ps=0u
+M1006 n4 c vdd w_n21_n12# pfet w=0.9u l=0.18u
++  ad=1.539p pd=5.22u as=0p ps=0u
+M1007 n2 clk gnd Gnd nfet w=0.9u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+M1008 out n4 gnd Gnd nfet w=0.45u l=0.18u
++  ad=0.2025p pd=1.8u as=0p ps=0u
+M1009 n4 clk n3 Gnd nfet w=0.9u l=0.18u
++  ad=0.648p pd=3.24u as=0.729p ps=3.42u
+M1010 n3 c gnd Gnd nfet w=0.9u l=0.18u
++  ad=0p pd=0u as=0p ps=0u
+.end
+
