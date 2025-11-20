@@ -15,10 +15,10 @@ MN1 op ip gnd gnd CMOSN W={W2*k} L={2*LAMBDA} AS={5*W2*k*LAMBDA} PS={10*LAMBDA+2
 .ends inv
 
 .subckt and2 out a b vdd gnd k=1
-MP1 out1 a vdd vdd CMOSP W={W1*k} L={2*LAMBDA} AS={5*W1*k*LAMBDA} PS={10*LAMBDA+2*W1*k} AD={5*W1*k*LAMBDA} PD={10*LAMBDA+2*W1*k}
-MP2 out1 b vdd vdd CMOSP W={W1*k} L={2*LAMBDA} AS={5*W1*k*LAMBDA} PS={10*LAMBDA+2*W1*k} AD={5*W1*k*LAMBDA} PD={10*LAMBDA+2*W1*k}
-MN1 out1 a n1 gnd CMOSN W={W2*2} L={2*LAMBDA} AS={5*W2*2*LAMBDA} PS={10*LAMBDA+2*2*W2} AD={5*W2*2*LAMBDA} PD={10*LAMBDA+2*2*W2}
-MN2 n1 b gnd gnd CMOSN W={W2*2} L={2*LAMBDA} AS={5*W2*2*LAMBDA} PS={10*LAMBDA+2*2*W2} AD={5*W2*2*LAMBDA} PD={10*LAMBDA+2*2*W2}
+MP1 out1 a vdd vdd CMOSP W={W1*k} L={2*LAMBDA}
+MP2 out1 b vdd vdd CMOSP W={W1*k} L={2*LAMBDA}
+MN1 out1 a n1 gnd CMOSN W={W2*2} L={2*LAMBDA}
+MN2 n1 b gnd gnd CMOSN W={W2*2} L={2*LAMBDA}
 x1 out out1 vdd gnd inv k=1
 .ends and2
 
@@ -135,3 +135,26 @@ M9 c3 y gnd gnd CMOSN W={k*w2} L={2*LAMBDA}
 M10 q q_bar Vdd Vdd CMOSP W={k*w1} L={2*LAMBDA}
 M11 q q_bar gnd gnd CMOSN W={k*w2} L={2*LAMBDA}
 .ends TSPC_DFF
+
+XDFF1 a0_in a0_out clk Vdd gnd TSPC_DFF k=1
+XDFF2 a1_in a1_out clk Vdd gnd TSPC_DFF k=1
+XDFF3 a2_in a2_out clk Vdd gnd TSPC_DFF k=1
+XDFF4 a3_in a3_out clk Vdd gnd TSPC_DFF k=1
+XDFF4b a4_in a4_out clk Vdd gnd TSPC_DFF k=1
+XDFF5 b0_in b0_out clk Vdd gnd TSPC_DFF k=1
+XDFF6 b1_in b1_out clk Vdd gnd TSPC_DFF k=1
+XDFF7 b2_in b2_out clk Vdd gnd TSPC_DFF k=1
+XDFF8 b3_in b3_out clk Vdd gnd TSPC_DFF k=1
+XDFF8b b4_in b4_out clk Vdd gnd TSPC_DFF k=1
+
+x0_Xor2 p0 a0_out b0_out vdd gnd xor2
+x1_Xor2 p1 a1_out b1_out vdd gnd xor2
+x2_Xor2 p2 a2_out b2_out vdd gnd xor2
+x3_Xor2 p3 a3_out b3_out vdd gnd xor2
+x4_Xor2 p4 a4_out b4_out vdd gnd xor2
+
+x0_and2 g0 a0_out b0_out vdd gnd and2 k=1
+x1_and2 g1 a1_out b1_out vdd gnd and2 k=1
+x2_and2 g2 a2_out b2_out vdd gnd and2 k=1
+x3_and2 g3 a3_out b3_out vdd gnd and2 k=1
+x4_and2 g4 a4_out b4_out vdd gnd and2 k=1
