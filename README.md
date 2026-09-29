@@ -19,11 +19,10 @@ A complete custom VLSI implementation of a synchronous 5-bit Carry Lookahead Add
 - Oscilloscope
 
 ## Repository Structure
-- `schematics/` – Circuit schematics
-- `layouts/` – Magic layout files
-- `spice/` – NGSpice netlists and simulations
+- `magic/` – Magic VLSI layouts and extracted circuits
+- `ngspice/` – SPICE netlists and simulations
 - `verilog/` – HDL implementation
-- `reports/` – Project documentation
-- `images/` – Layouts and simulation waveforms
+- `FPGA/` – FPGA design sources and constraints
+- `2024102029_report_VLSIPROJECT.pdf` – Project report
 
 This project demonstrates the complete custom VLSI design workflow, including schematic capture, physical layout, circuit simulation, post-layout validation, and hardware verification.
