@@ -1,0 +1,2 @@
+# These .sp files are SPICE circuit netlists, not SourcePawn source code.
+*.sp -linguist-detectable
